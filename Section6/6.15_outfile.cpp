@@ -1,5 +1,5 @@
 #include<iostream>
-#include<fstream>
+#include<fstream> // file I/O support
 
 int main(){
     using namespace std;
