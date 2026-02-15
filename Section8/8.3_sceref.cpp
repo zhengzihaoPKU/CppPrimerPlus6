@@ -1,0 +1,23 @@
+#include<iostream>
+
+int main(){
+    using namespace std;
+    int rats = 101;
+    int & rodents = rats; // rodents is a reference
+
+    cout << "rats = " << rats;
+    cout << ", rodents = " << rodents << endl;
+
+    cout << "rats address = " << &rats;
+    cout << ", rodent address = " << &rodents << endl;
+
+    int bunnies = 50;
+    rodents = bunnies;
+    cout << "bunnies = " << bunnies; // we can change the reference
+    cout << ", rats = " << rats;
+    cout << ", rodents = " << rodents << endl;
+
+    cout << "bunnies address = " << &bunnies;
+    cout << ", rodent address = " << &rodents << endl;
+    return 0;
+}
