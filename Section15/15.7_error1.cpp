@@ -23,7 +23,7 @@ double hmean(double a, double b)
     if (a == -b)
     {
         std::cout << "untenable arguments to hmean()\n";
-        std::abort();
+        std::abort();  // error
     }
     return 2.0 * a * b / (a + b); 
 }
